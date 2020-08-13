@@ -10,6 +10,10 @@ class MenuItem
         @price = price.to_f
         @@all << self
     end
+
+    def owner
+        restaurant.owner
+    end 
     
     def self.all
         @@all

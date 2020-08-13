@@ -19,4 +19,11 @@ class MenuItem
         @@all
     end 
 
+    def self.most_expensive
+        highest_price = MenuItem.all.map {|item| item.price}.max
+        MenuItem.all.find do |item|
+            item.price == highest_price
+        end
+    end
+
 end

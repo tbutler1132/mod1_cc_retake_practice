@@ -26,6 +26,7 @@ luigi_pizza = MenuItem.new(luigis, pizza, 20.00)
 luigi_chicken = MenuItem.new(luigis, chicken_francese, 22.00)
 sun_lee_wonton_soup = MenuItem.new(orchard, wonton_soup, 12.00)
 arno_la_pizza = MenuItem.new(arnos_la, pizza, 27.00)
+arno_beef_tar_tar = MenuItem.new(arnos, beef_tar_tar, 52.00)
 
 
 

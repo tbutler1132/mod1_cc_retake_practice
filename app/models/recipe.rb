@@ -1,4 +1,5 @@
 class Recipe
+    # CARYN SAYS: good overall ! a couple of notes! 
 
     attr_reader :name
     attr_accessor :description
@@ -30,16 +31,19 @@ class Recipe
     end
 
     def highest_price
+        # CARYN SAYS: nice solution! clean! 
         menu_items.map do |item|
             item.price
         end.max
     end 
 
     def cheapest_restaurant
+        # CARYN SAYS: also check out min_by in order to write this in a more concise way 
         cheapest = menu_items.map do |item|
             item.price
         end.min
-       restaurant_instance = menu_items.find do |item|
+        # CARYN SAYS: watch your naming here; that thing is a menu_item instance
+        restaurant_instance = menu_items.find do |item|
             item.price == cheapest
         end
         restaurant_instance.restaurant

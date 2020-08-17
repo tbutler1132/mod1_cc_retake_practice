@@ -6,6 +6,7 @@ def reload
   load 'config/environment.rb'
 end
 
+
 arno = RestaurantOwner.new("Arno", 63)
 luigi = RestaurantOwner.new("Luigi", 43)
 sun_lee = RestaurantOwner.new("Sun", 32)
@@ -28,7 +29,7 @@ sun_lee_wonton_soup = MenuItem.new(orchard, wonton_soup, 12.00)
 arno_la_pizza = MenuItem.new(arnos_la, pizza, 27.00)
 arno_beef_tar_tar = MenuItem.new(arnos, beef_tar_tar, 52.00)
 
-
+# CARYN SAYS: so much delicious food, I am officially hungry
 
 # ===== WARNING! DO NOT EDIT BELOW THIS LINE ===== #
 binding.pry

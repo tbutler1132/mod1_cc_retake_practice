@@ -11,6 +11,7 @@ class Restaurant
     end
 
     def menu_item
+        # CARYN SAYS: be careful of naming! technically the method is named wrong (missing a 's')
         MenuItem.all.select do |item|
             item.restaurant ==  self
         end
@@ -27,6 +28,7 @@ class Restaurant
     end
 
     def self.highest_rated
+        # CARYN SAYS: this solution works! try out max_by to learn about an enumberable perfect for this case 
         highest_rating = Restaurant.all.map {|r| r.star_rating}.max
         Restaurant.all.find do |restaurant|
             restaurant.star_rating == highest_rating
